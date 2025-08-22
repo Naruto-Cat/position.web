@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>網站</title>
+    <style>
+      .wrap {
+        margin: 50px;
+        width: 700px;
+        height: 700px;
+
+        /* 看框線 */
+        border: 1px solid red;
+      }
+
+      .wrap img {
+        width: 500px;
+        height: 400px;
+
+        /* 適合圖片有固定長寬 */
+        /* 試試寬:500px、高:600px */
+        /* object-fit: cover; */
+
+        /* 絕對位置:文繞圖(文字在前、文字在後) */
+        /* 元素加上 position: absolute; 時，會往上尋找離它最近的父元素(有設 position:reative 的) ，否則就是以body元素為定位點；一定要加上(top、right、bottom、left、z-index 這些 CSS 屬性)否則不會成功。 */
+        position: absolute;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <img src="./images/p1.jpg" />
+    </div>
+  </body>
+</html>
